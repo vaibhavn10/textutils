@@ -1,0 +1,59 @@
+@keyframes os {
+    25%{
+        transform: rotateZ(-10deg);
+        color: red;
+    }
+    50%{
+        transform: rotateZ(10deg);
+        color: orange;
+    }
+    75%{
+        transform: rotateZ(-10deg);
+        color: green;
+    }
+    100%{
+        transform: rotateZ(0deg);
+        color: white;
+    }
+    
+}
+#title:hover{
+    animation-name: os;
+    animation-duration: 5s;
+}
+.container{
+    border: 2px solid grey;
+    padding: 10px;
+    margin-top: 20px;
+
+    transition-duration: 0.3s;
+    /* transition-timing-function: linear; */
+    
+}
+
+.container:hover{
+    border-radius: 15px;
+    background-color: whitesmoke;
+    transform: rotateX('10');
+}
+
+.butun{
+
+    box-shadow: 0 5px 0 #5b80c1;
+    padding: 5px;
+    border: 1px solid #77a9ff;
+    border-radius: 3px;
+    background-color: white;
+    color: #006599;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+.butun:hover{
+    background-color: #77a9ff;
+    color: white;
+}
+.butun:active{
+    box-shadow: 0 2px 0 #5b80c1;
+    transform: translateY(4px);
+}
